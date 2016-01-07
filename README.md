@@ -1,5 +1,5 @@
 #Setup instructions:
-Make sure you have cocos2d installed. This application is built on top of 3.9, get it on http://cocos2d-x.org/download.
+Make sure you have cocos2d-x installed. This application is built on top of 3.9, get it on http://cocos2d-x.org/download.
 
 Create a new project in a random directory with:
 cocos new projectName -l js
