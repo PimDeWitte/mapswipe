@@ -9,6 +9,7 @@
     <meta name="full-screen" content="yes"/>
     <meta name="screen-orientation" content="portrait"/>
     <meta name="x5-fullscreen" content="true"/>
+    <!-- todo cache locally -->  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
     <meta name="360-fullscreen" content="true"/>
     <style>
         body, canvas, div {
@@ -22,6 +23,10 @@
 </head>
 <body style="padding:0; margin: 0; background: #000;">
 <script src="res/loading.js"></script>
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+<script src='http://crowdmap.geog.uni-heidelberg.de/uploads/user_3/Bing.js'></script>
 <canvas id="gameCanvas" width="480" height="720"></canvas>
 <script src="frameworks/cocos2d-html5/CCBoot.js"></script>
 <script cocos src="main.js"></script>

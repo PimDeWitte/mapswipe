@@ -16,7 +16,7 @@ var HelloWorldLayer = cc.Layer.extend({
         // 3. add your codes below...
         // add a label shows "Hello World"
         // create and initialize a label
-        var helloLabel = new cc.LabelTTF("Testing on-the-fly compilation", "Arial", 38);
+        var helloLabel = new cc.LabelTTF("Identify houses", "Arial", 38);
         // position the label on the center of the screen
         helloLabel.x = size.width / 2;
         helloLabel.y = size.height / 2 + 200;
@@ -26,8 +26,8 @@ var HelloWorldLayer = cc.Layer.extend({
         // add "HelloWorld" splash screen"
         this.sprite = new cc.Sprite(res.Tile1_png);
         this.sprite.attr({
-            x: size.width / 2,
-            y: size.height / 2
+            x: size.width,
+            y: size.height
         });
         this.addChild(this.sprite, 0);
 
