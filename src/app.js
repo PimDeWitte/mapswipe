@@ -16,7 +16,7 @@ var HelloWorldLayer = cc.Layer.extend({
         // 3. add your codes below...
         // add a label shows "Hello World"
         // create and initialize a label
-        var helloLabel = new cc.LabelTTF("Testing on-the-fly compilation", "Arial", 38);
+        var helloLabel = new cc.LabelTTF("Can I see gestures?", "Arial", 38);
         // position the label on the center of the screen
         helloLabel.x = size.width / 2;
         helloLabel.y = size.height / 2 + 200;
@@ -30,6 +30,16 @@ var HelloWorldLayer = cc.Layer.extend({
             y: size.height / 2
         });
         this.addChild(this.sprite, 0);
+
+	this.recognizer=new SimpleRecognizer();
+
+	cc.eventManager.addListener({
+	    event: cc.EventListener.TOUCH_ONE_BY_ONE,
+	    swallowTouches: true,
+            onTouchBegan: this.onTouchBegan,
+            onTouchMoved: this.onTouchMoved,
+            onTouchEnded: this.onTouchEnded
+	}, this)
 
         return true;
     }
